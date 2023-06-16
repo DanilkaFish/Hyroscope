@@ -1,0 +1,44 @@
+.sidebar {
+	width:260px;
+  height: 100vh;
+	position:fixed;
+	top: 0;
+	right: 0;
+  background-color: rgb(50,50,50);
+  color: white;
+}
+.canvas{
+
+	position:fixed;
+  margin-right:260px;
+	height:100vh;
+	top: 0;
+	left: 0;
+}
+#webgl{
+	height:100%;
+	width:100%;
+}
+.slider {
+        width:90%;
+        margin-bottom:8px;
+}
+button.buttons{
+    width:10em;
+    height: 30pt;
+    /* position:fixed; */
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10pt
+}
+
+.sliderbox{
+  background-color: rgb(70,70,70);
+  border-width: 3px ;
+  border-color: black;
+  border-style: solid; /* Стиль рамки вокруг параграфа */
+    /* Поля вокруг текста */
+}

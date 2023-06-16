@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="menu.css" type="text/css">
+    <title>FisherDE</title>
+</head>
+<body onload="main()">
+<div class="canvas">
+    <canvas id="webgl" width="2000" height="2000"></canvas>
+</div>
+<script src="../gl-matrix.js"></script>
+<script src="../cuon-utils.js"></script>
+<script src="../webgl-utils.js"></script>
+<script src="../webgl-debug.js"></script>
+<script src="../cuon-matrix.js"></script>
+
+<script src="mainfunction.js"></script>
+<div class="sidebar">
+  <button class="buttons" id="start" onclick="pause()">stop</button>
+
+  <!-- <input type="button" id="star" onclick=""> -->
+  <button class="buttons" onclick="start()" type="button">start</button>
+  <button class="buttons" onclick="reset()" type="button">reset</button>
+  <div class="sliderbox">
+    <br>
+    Gravitation:
+    <br>
+  <input type="range" min="0" max="30" value="10" class="slider" id="gravitation"></input>
+  <div id="gravity"></div>
+  </div>
+
+  <div class="sliderbox">
+    <br>
+    Rotation speed:
+    <br>
+  <input type="range" min="0" max="50" value="5" class="slider" id="angleVelocity"></input>
+  <div id="rotspeed"></div>
+
+  </div>
+  <br>
+  Initial conditions:
+  <div class="sliderbox">
+    <br>
+    Angle theta
+    <br>
+  <input type="range" min="0" max="180" value="90" class="slider" id="Theta"></input>
+  <div id="theta"></div>
+</div>
+<div class="sliderbox">
+  <br>
+  Angle phi
+  <br>
+<input type="range" min="0" max="360" value="0" class="slider" id="Phi"></input>
+<div id="phi"></div>
+</div>
+
+</div>
+</body>
+
+</html>
